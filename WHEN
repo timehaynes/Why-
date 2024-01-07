@@ -1,0 +1,58 @@
+$ echo 'Timecapsle' > README
+$ git status
+On branch master
+Your branch is up-to- date with 'origin/master'.
+Umtracked files:
+  (use "git add <file> ...." to inculde what will be committed)
+
+    README
+
+nothing added to commit but untracke files present (use "git add" to track)
+$ git add README
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master".
+Changes to committed:
+(use "git restore --staged <file>...." to unstage)
+new file: README
+$ git clone https://github.com/schacon/ticgit
+Cloning into 'ticgit'...
+remote: Reusing existing pack: 1857, done.
+remote: Total 1857 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (1857/1857), 374.35 KiB | 268.00 KiB/s, done.
+Resolving deltas: 100% (772/772), done.
+Checking connectivity... done.
+$ cd ticgit
+$ git remote
+origin
+$ git remote -v
+origin https://github.com/schacon/ticgit (fetch)
+origin https://github.com/schacon/ticgit (push)
+$ cd grit
+$ git remote -v
+bakkdoor https://github.com/bakkdoor/grit (fetch)
+bakkdoor https://github.com/bakkdoor/grit (push)
+cho45 https://github.com/cho45/grit (fetch)
+cho45 https://github.com/cho45/grit (push)
+defunkt https://github.com/defunkt/grit (fetch)
+defunkt https://github.com/defunkt/grit (push)
+koke git://github.com/koke/grit.git (fetch)
+koke git://github.com/koke/grit.git (push)
+origin git@github.com:mojombo/grit.git (fetch)
+origin git@github.com:mojombo/grit.git (push)
+$ git remote
+origin
+$ git remote add pb https://github.com/paulboone/ticgit
+$ git remote -v
+origin https://github.com/schacon/ticgit (fetch)
+origin https://github.com/schacon/ticgit (push)
+pb https://github.com/paulboone/ticgit (fetch)
+pb https://github.com/paulboone/ticgit (push)
+$ git fetch pb
+remote: Counting objects: 43, done.
+remote: Compressing objects: 100% (36/36), done.
+remote: Total 43 (delta 10), reused 31 (delta 5)
+Unpacking objects: 100% (43/43), done.
+From https://github.com/paulboone/ticgit
+ * [new branch] master -> pb/master
+ * [new branch] ticgit -> pb/ticgit
